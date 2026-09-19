@@ -1,0 +1,96 @@
+{
+  "sectionTitle": "Capabilities",
+  "subtitle": "A focused toolkit built through hands-on, real-world work.",
+  "categories": [
+    {
+      "category": "Programming Languages",
+      "icon": "fas fa-code",
+      "color": "#FF6B6B",
+      "skills": [
+        "Java",
+        "C++",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "SQL"
+      ]
+    },
+    {
+      "category": "Frameworks & Libraries",
+      "icon": "fas fa-toolbox",
+      "color": "#4ECDC4",
+      "skills": [
+        "Spring Boot",
+        "Spring Cloud",
+        "Spring MVC",
+        "Spring Data JPA",
+        "Node.js",
+        "Express.js",
+        "React.js",
+        "Angular",
+        "LangChain",
+        "LangGraph",
+        "PyTorch",
+        "TensorFlow",
+        "Scikit-learn",
+        "Pandas",
+        "NumPy"
+      ]
+    },
+    {
+      "category": "Tools & Platforms",
+      "icon": "fas fa-wrench",
+      "color": "#FFE66D",
+      "skills": [
+        "OpenAI APIs",
+        "Claude AI",
+        "Apache Kafka",
+        "AWS",
+        "AWS Lambda",
+        "Amazon S3",
+        "Docker",
+        "Kubernetes",
+        "Jenkins",
+        "CI/CD",
+        "JDBC",
+        "Redis",
+        "JUnit",
+        "Mockito",
+        "Git"
+      ]
+    },
+    {
+      "category": "Technical Skills",
+      "icon": "fas fa-laptop-code",
+      "color": "#A8DADC",
+      "skills": [
+        "Machine Learning",
+        "Generative AI",
+        "LLMs",
+        "RAG",
+        "Agentic AI",
+        "Predictive Analytics",
+        "MLOps",
+        "Microservices",
+        "Event-Driven Architecture",
+        "Distributed Systems",
+        "Responsive Web Development",
+        "Component-Based Architecture",
+        "Cloud-Native Development",
+        "Database Design",
+        "Query Optimization",
+        "Unit Testing",
+        "Integration Testing",
+        "TDD",
+        "Debugging",
+        "Code Quality",
+        "Performance Optimization",
+        "Agile",
+        "Scrum",
+        "Data Processing",
+        "Financial Data Analysis",
+        "Transaction Analytics"
+      ]
+    }
+  ]
+}

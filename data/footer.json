@@ -1,0 +1,25 @@
+{
+  "copyright": {
+    "text": "© 2026 MADHAV MEESALA. All rights reserved.",
+    "year": "2026",
+    "name": "MADHAV MEESALA"
+  },
+  "tagline": "Software Engineer",
+  "links": [
+    {
+      "text": "Email",
+      "href": "mailto:madhavmeesala@gmail.com"
+    }
+  ],
+  "socialLinks": [
+    {
+      "platform": "Email",
+      "url": "mailto:madhavmeesala@gmail.com",
+      "icon": "fas fa-envelope"
+    }
+  ],
+  "backToTop": {
+    "text": "Back to Top",
+    "icon": "fas fa-chevron-up"
+  }
+}

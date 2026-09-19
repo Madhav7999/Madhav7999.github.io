@@ -1,0 +1,18 @@
+{
+  "profile": {
+    "name": "MADHAV MEESALA",
+    "title": "Software Engineer",
+    "bio": "Software Engineer with 4+ years of experience building scalable full-stack and distributed systems across financial services and digital payments using Java, C++, Python, Spring Boot, React, Angular, AWS, and Kafka. Skilled in microservices, cloud-native development, Kubernetes, Docker, CI/CD, REST APIs, and database optimization, with recent experience in GenAI, LLMs, RAG, Agentic AI, and MLOps. Proven ability to deliver secure, reliable, high-performance solutions that improve customer experiences and business operations."
+  },
+  "contact": {
+    "email": "madhavmeesala@gmail.com",
+    "phone": "+1 (217) 790-7292",
+    "githubUsername": "Madhav7999",
+    "linkedin": ""
+  },
+  "siteConfig": {
+    "domain": "",
+    "title": "MADHAV MEESALA - Portfolio",
+    "description": "Software Engineer with 4+ years of experience building scalable full-stack and distributed systems across financial services and digital payments using Java, C++, Python, Spring Boot, React, Angular, AWS, and Kafka. Skilled in microservices, cloud-native development, Kubernetes, Docker, CI/CD, REST APIs, and database optimization, with recent experience in GenAI, LLMs, RAG, Agentic AI, and MLOps. Proven ability to deliver secure, reliable, high-performance solutions that improve customer experiences and business operations."
+  }
+}

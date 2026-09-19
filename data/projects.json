@@ -1,0 +1,28 @@
+{
+  "sectionTitle": "Selected Projects",
+  "subtitle": "Work that shows structured thinking, clean execution, and real outcomes.",
+  "projects": [
+    {
+      "title": "Your Project",
+      "description": "Add your projects to showcase your work",
+      "longDescription": "Add your projects to showcase your work",
+      "category": "Development",
+      "technologies": [],
+      "icon": "fas fa-folder-open",
+      "color": "#FF6B6B",
+      "image": "",
+      "featured": true,
+      "github": "",
+      "demo": "",
+      "links": {
+        "github": "",
+        "demo": "",
+        "live": ""
+      },
+      "stats": {
+        "status": "Planned",
+        "year": "2026"
+      }
+    }
+  ]
+}

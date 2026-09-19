@@ -1,0 +1,25 @@
+{
+  "title": "MADHAV MEESALA | Software Engineer",
+  "description": "Software Engineer with 4+ years of experience building scalable full-stack and distributed systems across financial services and digital payments using Java, C++, Python, Spring Boot, React, Angula...",
+  "keywords": "MADHAV MEESALA, Software Engineer, Portfolio, Java, C++, Python, JavaScript, TypeScript, SQL, Spring Boot, Spring Cloud",
+  "author": "MADHAV MEESALA",
+  "siteName": "MADHAV MEESALA",
+  "siteTitle": "MADHAV MEESALA | Software Engineer",
+  "meta": {
+    "title": "MADHAV MEESALA | Software Engineer",
+    "description": "Software Engineer with 4+ years of experience building scalable full-stack and distributed systems across financial services and digital payments using Java, C++, Python, Spring Boot, React, Angula...",
+    "author": "MADHAV MEESALA",
+    "keywords": "MADHAV MEESALA, Software Engineer, Portfolio, Java, C++, Python, JavaScript, TypeScript, SQL, Spring Boot, Spring Cloud"
+  },
+  "branding": {
+    "name": "MADHAV MEESALA",
+    "tagline": "Software Engineer",
+    "logo": "/logo.png"
+  },
+  "settings": {
+    "year": 2026,
+    "enableAnimations": true,
+    "enableParticles": true,
+    "navbarScrollEffect": true
+  }
+}

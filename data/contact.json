@@ -1,0 +1,80 @@
+{
+  "sectionTitle": "Contact",
+  "subtitle": "Have a role, project, or collaboration in mind? Let's connect.",
+  "contactInfo": [
+    {
+      "type": "email",
+      "label": "Email",
+      "value": "madhavmeesala@gmail.com",
+      "href": "mailto:madhavmeesala@gmail.com",
+      "icon": "fas fa-envelope",
+      "color": "#FF6B6B"
+    },
+    {
+      "type": "phone",
+      "label": "Phone",
+      "value": "+1 (217) 790-7292",
+      "href": "tel:12177907292",
+      "icon": "fas fa-phone",
+      "color": "#4ECDC4"
+    },
+    {
+      "type": "location",
+      "label": "Location",
+      "value": "Wisconsin",
+      "href": "https://maps.google.com/?q=Wisconsin",
+      "icon": "fas fa-map-marker-alt",
+      "color": "#FFE66D"
+    }
+  ],
+  "form": {
+    "action": "#",
+    "method": "POST",
+    "submitText": "Send Message",
+    "submitIcon": "fas fa-paper-plane",
+    "successMessage": "Thanks for reaching out!",
+    "errorMessage": "Oops! Something went wrong. Please try again.",
+    "fields": [
+      {
+        "name": "name",
+        "type": "text",
+        "label": "Name",
+        "placeholder": "Your name",
+        "required": true,
+        "icon": "fas fa-user"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "label": "Email",
+        "placeholder": "you@example.com",
+        "required": true,
+        "icon": "fas fa-envelope"
+      },
+      {
+        "name": "subject",
+        "type": "text",
+        "label": "Subject",
+        "placeholder": "What is this about?",
+        "required": true,
+        "icon": "fas fa-tag"
+      },
+      {
+        "name": "message",
+        "type": "textarea",
+        "label": "Message",
+        "placeholder": "Share a few details about the role, team, or project...",
+        "required": true,
+        "rows": 6,
+        "icon": "fas fa-comment"
+      }
+    ]
+  },
+  "socialMedia": [
+    {
+      "platform": "Email",
+      "url": "mailto:madhavmeesala@gmail.com",
+      "icon": "fas fa-envelope"
+    }
+  ]
+}

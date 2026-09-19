@@ -1,0 +1,28 @@
+{
+  "sectionTitle": "Education",
+  "subtitle": "Academic foundation supporting my professional work.",
+  "certificationsTitle": "Certifications",
+  "education": [
+    {
+      "degree": "Masters in Computer Technology",
+      "school": "Eastern Illinois University",
+      "institution": "Eastern Illinois University",
+      "period": "2025",
+      "details": "",
+      "description": "",
+      "icon": "fas fa-graduation-cap",
+      "color": "#2FC4B2"
+    },
+    {
+      "degree": "Bachelors in Electronics",
+      "school": "University AURORA",
+      "institution": "University AURORA",
+      "period": "May 2021",
+      "details": "",
+      "description": "",
+      "icon": "fas fa-university",
+      "color": "#F2C14E"
+    }
+  ],
+  "certifications": []
+}

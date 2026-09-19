@@ -1,0 +1,54 @@
+{
+  "greeting": "Portfolio",
+  "name": "MADHAV MEESALA",
+  "title": "Software Engineer",
+  "summary": "Software Engineer with 4+ years of experience building scalable full-stack and distributed systems across financial services and digital payments using Java, C++, Python, Spring Boot, React, Angular, AWS, and Kafka. Skilled in microservices, cloud-native development, Kubernetes, Docker, CI/CD, REST APIs, and database optimization, with recent experience in GenAI, LLMs, RAG, Agentic AI, and MLOps. Proven ability to deliver secure, reliable, high-performance solutions that improve customer experiences and business operations.",
+  "avatarUrl": "",
+  "tagline": "Java / C++ / Python / JavaScript / TypeScript",
+  "highlights": [
+    {
+      "icon": "fas fa-briefcase",
+      "text": "4+ Years Experience",
+      "color": "#FF6B6B"
+    },
+    {
+      "icon": "fas fa-project-diagram",
+      "text": "1 Projects Delivered",
+      "color": "#4ECDC4"
+    },
+    {
+      "icon": "fas fa-code",
+      "text": "Java, C++, Python",
+      "color": "#FFE66D"
+    }
+  ],
+  "cta": {
+    "buttons": [
+      {
+        "text": "Contact Me",
+        "href": "#contact",
+        "type": "primary",
+        "external": false,
+        "icon": "fas fa-envelope"
+      },
+      {
+        "text": "Explore Projects",
+        "href": "#projects",
+        "type": "secondary",
+        "external": false,
+        "icon": "fas fa-chart-line"
+      }
+    ]
+  },
+  "socialLinks": [
+    {
+      "platform": "Email",
+      "url": "mailto:madhavmeesala@gmail.com",
+      "icon": "fas fa-envelope"
+    }
+  ],
+  "scrollIndicator": {
+    "text": "Scroll to explore",
+    "icon": "fas fa-chevron-down"
+  }
+}
