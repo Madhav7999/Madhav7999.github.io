@@ -249,7 +249,7 @@ async function loadExperience() {
                     <div class="timeline-content">
                         <div class="experience-header">
                             <div class="experience-brand">
-                                <div class="company-logo" aria-hidden="true">
+                                <div class="company-logo${exp.logo ? '' : ' logo-fallback'}" aria-hidden="true">
                                     ${exp.logo ? `
                                         <img src="${exp.logo}" alt="" loading="lazy" onerror="this.parentElement.classList.add('logo-fallback'); this.remove();">
                                     ` : ''}
@@ -339,7 +339,13 @@ async function loadProjects() {
         if (projectsGrid && data.projects) {
             projectsGrid.innerHTML = data.projects.map((project, index) => `
                 <div class="project-card" style="--project-color: ${project.color}">
-                    <div class="project-visual">
+                    ${project.image ? `
+                        <div class="project-cover">
+                            <img src="${project.image}" alt="${project.title} cover" loading="lazy" onerror="this.parentElement.remove();">
+                            <span class="project-number">${String(index + 1).padStart(2, '0')}</span>
+                        </div>
+                    ` : ''}
+                    <div class="project-visual"${project.image ? ' hidden' : ''}>
                         <div class="project-icon" style="background: ${project.color}">
                             <i class="${project.icon}"></i>
                         </div>
@@ -406,8 +412,8 @@ async function loadEducation() {
         if (educationGrid && data.education) {
             educationGrid.innerHTML = data.education.map(edu => `
                 <div class="education-card">
-                    <div class="education-icon" style="background: ${edu.color}20; color: ${edu.color}">
-                        <i class="${edu.icon}"></i>
+                    <div class="education-icon${edu.logo ? ' has-logo' : ''}" style="background: ${edu.logo ? '#fff' : edu.color + '20'}; color: ${edu.color}">
+                        ${edu.logo ? `<img src="${edu.logo}" alt="${edu.institution} logo" loading="lazy">` : `<i class="${edu.icon}"></i>`}
                     </div>
                     <h3 class="education-degree">${edu.degree}</h3>
                     <p class="education-institution">${edu.institution}</p>

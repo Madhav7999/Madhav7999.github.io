@@ -1,26 +1,292 @@
 {
   "sectionTitle": "Selected Projects",
-  "subtitle": "Work that shows structured thinking, clean execution, and real outcomes.",
+  "subtitle": "Streaming systems, MLOps tooling, and applied ML: built end to end and open on GitHub.",
   "projects": [
     {
-      "title": "Your Project",
-      "description": "Add your projects to showcase your work",
-      "longDescription": "Add your projects to showcase your work",
-      "category": "Development",
-      "technologies": [],
-      "icon": "fas fa-folder-open",
+      "title": "Real-Time Credit Card Fraud Detection",
+      "description": "End-to-end streaming pipeline that scores credit-card transactions as they arrive. Kafka feeds a Spark Streaming job running a Random Forest model; results land in Cassandra and appear live on a Spring Boot dashboard.",
+      "longDescription": "Simulated customers and 10K+ transactions are loaded into Cassandra with Spark SQL, a Spark ML pipeline trains preprocessing and Random Forest models, and a Spark Streaming job consumes a Kafka topic to classify each incoming transaction into fraud / non-fraud tables. A Spring Boot dashboard shows results in real time, and Flask REST APIs serve customer data and statements.",
+      "category": "Streaming ML · Fintech",
+      "technologies": [
+        "Apache Kafka",
+        "Spark Streaming",
+        "Spark ML",
+        "Cassandra",
+        "Spring Boot",
+        "Flask",
+        "Scala"
+      ],
+      "icon": "fas fa-shield-alt",
       "color": "#FF6B6B",
-      "image": "",
+      "image": "assets/images/projects/real-time-fraud-detection.jpg",
       "featured": true,
-      "github": "",
+      "github": "https://github.com/Madhav7999/real-time-fraud-detection",
       "demo": "",
       "links": {
-        "github": "",
+        "github": "https://github.com/Madhav7999/real-time-fraud-detection",
         "demo": "",
         "live": ""
       },
       "stats": {
-        "status": "Planned",
+        "type": "Streaming",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "PointInTime: Leak-Proof Feature Store",
+      "description": "A feature store for credit decisioning that makes point-in-time-correct joins the only way to get training data. A planted future-leaking feature proves that the store refuses to serve leakage.",
+      "longDescription": "Credit models that score 0.91 AUC offline and 0.68 in production usually learned from data that did not exist at decision time. PointInTime stores facts bitemporally, answers as-of reads with SQL window functions, replays the fact log under a watermark for streaming materialisation, and runs an automated train/serve skew check comparing offline and online values for the same entity and timestamp.",
+      "category": "MLOps · Credit Risk",
+      "technologies": [
+        "Python",
+        "SQL",
+        "Feature Store",
+        "Streaming",
+        "Bitemporal Data",
+        "ML Evaluation"
+      ],
+      "icon": "fas fa-clock",
+      "color": "#2FC4B2",
+      "image": "assets/images/projects/pointintime.jpg",
+      "featured": true,
+      "github": "https://github.com/Madhav7999/pointintime",
+      "demo": "",
+      "links": {
+        "github": "https://github.com/Madhav7999/pointintime",
+        "demo": "",
+        "live": ""
+      },
+      "stats": {
+        "type": "Flagship",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "DriftGuard: ML Lifecycle & Drift Monitoring",
+      "description": "End-to-end ML lifecycle for demand forecasting: MLflow tracking and model registry, FastAPI serving, PSI/KS drift detection, and an automated retrain-and-promote loop.",
+      "longDescription": "Loads the production model, measures feature and prediction drift between reference and monitored periods, and retrains, registers, and promotes a new version only when drift is significant. It then re-measures and records an auditable before/after decision. Packaged with Docker Compose, a CLI, and a generated model card.",
+      "category": "MLOps",
+      "technologies": [
+        "Python",
+        "MLflow",
+        "FastAPI",
+        "scikit-learn",
+        "SciPy",
+        "Docker"
+      ],
+      "icon": "fas fa-sync-alt",
+      "color": "#4ECDC4",
+      "image": "assets/images/projects/driftguard.jpg",
+      "featured": true,
+      "github": "https://github.com/Madhav7999/driftguard",
+      "demo": "",
+      "links": {
+        "github": "https://github.com/Madhav7999/driftguard",
+        "demo": "",
+        "live": ""
+      },
+      "stats": {
+        "type": "MLOps",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "Transaction Fraud Classification",
+      "description": "A comparison of six classifiers for detecting fraudulent payments in about 595K BankSim transactions, focused on the precision/recall trade-off that matters to banks.",
+      "longDescription": "Cleaned and one-hot encoded a heavily imbalanced dataset (7,200 fraud vs 587K legitimate) and benchmarked Naive Bayes, Logistic Regression, Neural Network, Decision Tree, Random Forest and more on precision, recall, false positives, and false negatives. Tree ensembles reach about 0.88–0.90 precision while keeping missed fraud low.",
+      "category": "Machine Learning · Fintech",
+      "technologies": [
+        "Python",
+        "Pandas",
+        "scikit-learn",
+        "Jupyter",
+        "Imbalanced Learning"
+      ],
+      "icon": "fas fa-search-dollar",
+      "color": "#F2C14E",
+      "image": "assets/images/projects/fraud-detection-in-python.jpg",
+      "featured": true,
+      "github": "https://github.com/Madhav7999/fraud-detection-in-python",
+      "demo": "",
+      "links": {
+        "github": "https://github.com/Madhav7999/fraud-detection-in-python",
+        "demo": "",
+        "live": ""
+      },
+      "stats": {
+        "type": "Analysis",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "GoodReads Data Pipeline on AWS",
+      "description": "Near-real-time ETL pipeline that moves GoodReads API data through S3 landing, working, and processed zones, transforms it with Spark, and upserts it into a Redshift warehouse, all orchestrated by Airflow.",
+      "longDescription": "Spark jobs run every 10 minutes under Airflow, repartition and transform raw data, stage it into Redshift, and UPSERT into warehouse tables. Custom Airflow operators run data-quality checks and analytics queries after each load, so downstream tables stay trustworthy.",
+      "category": "Data Engineering",
+      "technologies": [
+        "Apache Spark",
+        "Apache Airflow",
+        "AWS S3",
+        "Amazon Redshift",
+        "Python",
+        "SQL"
+      ],
+      "icon": "fas fa-database",
+      "color": "#A78BFA",
+      "image": "assets/images/projects/goodreads_etl_pipeline.jpg",
+      "featured": false,
+      "github": "https://github.com/Madhav7999/goodreads_etl_pipeline",
+      "demo": "",
+      "links": {
+        "github": "https://github.com/Madhav7999/goodreads_etl_pipeline",
+        "demo": "",
+        "live": ""
+      },
+      "stats": {
+        "type": "Pipeline",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "Stockastic: ML Stock Forecasting App",
+      "description": "An interactive Streamlit app that pulls live market data, fits ARIMA models, and plots multi-day price forecasts with backtesting.",
+      "longDescription": "Users pick a ticker, and the app fetches history through yFinance, trains an ARIMA model with StatsModels, generates forecasts, and renders interactive Plotly charts of history and forecasts, with backtesting to evaluate accuracy. The layout is responsive.",
+      "category": "Time Series · Web App",
+      "technologies": [
+        "Python",
+        "Streamlit",
+        "StatsModels",
+        "ARIMA",
+        "Plotly",
+        "yFinance"
+      ],
+      "icon": "fas fa-chart-line",
+      "color": "#34D399",
+      "image": "assets/images/projects/stockastic.jpg",
+      "featured": false,
+      "github": "https://github.com/Madhav7999/stockastic",
+      "demo": "",
+      "links": {
+        "github": "https://github.com/Madhav7999/stockastic",
+        "demo": "",
+        "live": ""
+      },
+      "stats": {
+        "type": "App",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "ModelCard: Automated Model Documentation",
+      "description": "Library and CLI that turns a trained scikit-learn estimator into a deterministic Markdown model card, so the documentation is generated from the model itself and can be diffed in CI.",
+      "longDescription": "Extracts the model type and feature importances (from tree importances or linear coefficients), renders a stable metrics table, and emits intended-use, data, limitation, and ethics sections from typed metadata. Output is byte-identical for identical inputs, and it works fully offline. Backed by 28 tests.",
+      "category": "MLOps · Governance",
+      "technologies": [
+        "Python",
+        "scikit-learn",
+        "CLI",
+        "uv",
+        "pytest",
+        "Model Governance"
+      ],
+      "icon": "fas fa-id-card",
+      "color": "#60A5FA",
+      "image": "assets/images/projects/modelcard.jpg",
+      "featured": false,
+      "github": "https://github.com/Madhav7999/modelcard",
+      "demo": "",
+      "links": {
+        "github": "https://github.com/Madhav7999/modelcard",
+        "demo": "",
+        "live": ""
+      },
+      "stats": {
+        "type": "Tooling",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "CalibrateKit: Probability Calibration Toolkit",
+      "description": "Toolkit for checking whether a classifier's probabilities can be trusted: ECE, Brier score, reliability diagrams, and isotonic and Platt recalibration for scikit-learn models.",
+      "longDescription": "Risk decisions depend on well-calibrated probabilities, not just accuracy. CalibrateKit measures miscalibration, draws reliability curves, and fits isotonic or Platt recalibrators behind a small CLI, with tests covering the reliability math.",
+      "category": "ML Reliability",
+      "technologies": [
+        "Python",
+        "NumPy",
+        "scikit-learn",
+        "CLI",
+        "pytest"
+      ],
+      "icon": "fas fa-sliders-h",
+      "color": "#F472B6",
+      "image": "assets/images/projects/calibratekit.jpg",
+      "featured": false,
+      "github": "https://github.com/Madhav7999/calibratekit",
+      "demo": "",
+      "links": {
+        "github": "https://github.com/Madhav7999/calibratekit",
+        "demo": "",
+        "live": ""
+      },
+      "stats": {
+        "type": "Tooling",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "InfoHunter: OSINT Intelligence Suite",
+      "description": "Modular Python OSINT suite that analyzes usernames, emails, and domains across public sources and produces PDF and JSON investigation reports.",
+      "longDescription": "Plugs into sources like HIBP, WHOIS/DNS, Shodan and Hunter.io through configurable API keys. It runs interactively or from the CLI for automation, and includes an optional Streamlit/Flask web front end.",
+      "category": "Security · Automation",
+      "technologies": [
+        "Python",
+        "Streamlit",
+        "REST APIs",
+        "Security",
+        "Reporting"
+      ],
+      "icon": "fas fa-user-secret",
+      "color": "#FB923C",
+      "image": "assets/images/projects/infohunter.jpg",
+      "featured": false,
+      "github": "https://github.com/Madhav7999/infohunter",
+      "demo": "",
+      "links": {
+        "github": "https://github.com/Madhav7999/infohunter",
+        "demo": "",
+        "live": ""
+      },
+      "stats": {
+        "type": "Security",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "NLP Text Analysis Dashboard",
+      "description": "Streamlit dashboard that analyzes pasted text or uploaded PDF, DOCX, and TXT files, showing token statistics, sentiment, named entities, word clouds, and summaries.",
+      "longDescription": "Built on spaCy, NLTK and TextBlob. It extracts text from documents, cleans it, and visualizes the most common tokens, sentiment, and entities, with ROUGE-scored summarization and downloadable results.",
+      "category": "NLP · Web App",
+      "technologies": [
+        "Python",
+        "Streamlit",
+        "spaCy",
+        "NLTK",
+        "TextBlob",
+        "Plotly"
+      ],
+      "icon": "fas fa-language",
+      "color": "#22D3EE",
+      "image": "assets/images/projects/text-analysis-using-nlp-streamlit.jpg",
+      "featured": false,
+      "github": "https://github.com/Madhav7999/text-analysis-using-nlp-streamlit",
+      "demo": "",
+      "links": {
+        "github": "https://github.com/Madhav7999/text-analysis-using-nlp-streamlit",
+        "demo": "",
+        "live": ""
+      },
+      "stats": {
+        "type": "App",
         "year": "2026"
       }
     }

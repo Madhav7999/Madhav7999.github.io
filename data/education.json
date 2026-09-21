@@ -11,7 +11,8 @@
       "details": "",
       "description": "",
       "icon": "fas fa-graduation-cap",
-      "color": "#2FC4B2"
+      "color": "#2FC4B2",
+      "logo": "assets/images/logos/eiu.svg"
     },
     {
       "degree": "Bachelors in Electronics",
