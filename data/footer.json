@@ -9,6 +9,10 @@
     {
       "text": "Email",
       "href": "mailto:madhavmeesala@gmail.com"
+    },
+    {
+      "text": "LinkedIn",
+      "href": "https://www.linkedin.com/in/madhav-m-b38013213/"
     }
   ],
   "socialLinks": [
@@ -16,6 +20,11 @@
       "platform": "Email",
       "url": "mailto:madhavmeesala@gmail.com",
       "icon": "fas fa-envelope"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/madhav-m-b38013213/",
+      "icon": "fab fa-linkedin"
     }
   ],
   "backToTop": {

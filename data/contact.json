@@ -25,6 +25,14 @@
       "href": "https://maps.google.com/?q=Wisconsin",
       "icon": "fas fa-map-marker-alt",
       "color": "#FFE66D"
+    },
+    {
+      "type": "linkedin",
+      "label": "LinkedIn",
+      "value": "madhav-m",
+      "href": "https://www.linkedin.com/in/madhav-m-b38013213/",
+      "icon": "fab fa-linkedin",
+      "color": "#0A66C2"
     }
   ],
   "form": {
@@ -75,6 +83,11 @@
       "platform": "Email",
       "url": "mailto:madhavmeesala@gmail.com",
       "icon": "fas fa-envelope"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/madhav-m-b38013213/",
+      "icon": "fab fa-linkedin"
     }
   ]
 }
